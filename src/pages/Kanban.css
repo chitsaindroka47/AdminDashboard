@@ -1,0 +1,73 @@
+.kanban-container {
+  padding: 32px;
+  background: linear-gradient(to right, #fff6f5, #ffe7e2);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kanban-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #7a1e15; /* dark reddish text */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(204, 51, 37, 0.3);
+}
+
+.kanban-board {
+  background: linear-gradient(135deg, #cc3325 0%, #ff6b4a 100%);
+  padding: 32px;
+  border-radius: 18px;
+  min-height: 450px;
+  box-shadow: 0 10px 25px rgba(204, 51, 37, 0.4);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.kanban-task {
+  display: flex;
+  align-items: center;
+  padding: 18px 22px;
+  background-color: #fff0efcc; /* soft translucent white with warm tint */
+  border-radius: 14px;
+  font-weight: 600;
+  color: #7a1e15;
+  cursor: grab;
+  user-select: none;
+  box-shadow: 0 4px 8px rgba(204, 51, 37, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.kanban-task.dragging {
+  cursor: grabbing;
+  background-color: #ffdad4;
+  box-shadow: 0 8px 16px rgba(204, 51, 37, 0.4);
+  transform: scale(1.05);
+  z-index: 1000;
+}
+
+.kanban-task:hover:not(.dragging) {
+  background-color: #ffd7cf;
+  box-shadow: 0 6px 14px rgba(204, 51, 37, 0.25);
+}
+
+.task-icon {
+  margin-right: 14px;
+  font-size: 22px;
+  color: #cc3325;
+  flex-shrink: 0;
+}
+
+.task-content {
+  flex-grow: 1;
+  font-size: 18px;
+  line-height: 1.3;
+}

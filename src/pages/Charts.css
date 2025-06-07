@@ -1,0 +1,56 @@
+.charts-container {
+  padding: 32px;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.charts-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.chart-card {
+  background: linear-gradient(to right, #e3f2fd, #f1f8ff);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 123, 255, 0.1);
+  padding: 16px 20px;
+  transition: transform 0.3s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.15);
+}
+
+.chart-card h4 {
+  font-size: 18px;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.large-chart-card {
+  background: linear-gradient(to right, #e8f5e9, #f1fff1);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.15);
+}
+
+.large-chart-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #28a745;
+  margin-bottom: 16px;
+  text-align: center;
+}
