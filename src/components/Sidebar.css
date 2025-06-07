@@ -11,10 +11,12 @@
   transition: width 0.3s ease;
   z-index: 1001;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; 
 }
 
 .sidebar.collapsed {
   width: 70px;
+  height: 100vh; 
 }
 
 .sidebar-header {
@@ -100,4 +102,12 @@
 
 .sidebar.collapsed .nav-item span {
   display: none;
+}
+
+
+@media (max-width: 770px) {
+  .sidebar {
+    width: 70px;
+    height: 100vh;
+  }
 }
